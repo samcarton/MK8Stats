@@ -1,5 +1,7 @@
+// based on Spazit's table from http://www.reddit.com/r/wiiu/comments/270x4z/mario_kart_8s_hidden_stats_table_with_pretty/
 $(document).ready( function () {        
-    $('#CharacterTable').dataTable( {
+    var characterTable = $('#CharacterTable').dataTable( {
+        "dom": 'C<"clear">Rlfrtip',
         scrollX: true,
         paging: false,
         searching: false,
@@ -20,10 +22,14 @@ $(document).ready( function () {
             {"data": "traction"},
             {"data": "miniturbo"},
             {"data": "totalAmount"}
-        ]
+        ]        
+    } );
+    new $.fn.dataTable.FixedColumns( characterTable, {
+        leftColumns: 1
     } );
     
-    $('#BodyTable').dataTable( {
+    var bodyTable = $('#BodyTable').dataTable( {
+        "dom": 'C<"clear">Rlfrtip',
         scrollX: true,
         paging: false,
         searching: false,
@@ -47,8 +53,12 @@ $(document).ready( function () {
             {"data": "totalAmount"}
         ]
     } );
+    new $.fn.dataTable.FixedColumns( bodyTable, {
+        leftColumns: 2
+    } );
     
-    $('#TireTable').dataTable( {
+    var tireTable = $('#TireTable').dataTable( {
+        "dom": 'C<"clear">Rlfrtip',
         scrollX: true,
         paging: false,
         searching: false,
@@ -71,8 +81,12 @@ $(document).ready( function () {
             {"data": "totalAmount"}
         ]
     } );
+    new $.fn.dataTable.FixedColumns( tireTable, {
+        leftColumns: 1
+    } );
     
-    $('#GliderTable').dataTable( {
+    var gliderTable = $('#GliderTable').dataTable( {
+        "dom": 'C<"clear">Rlfrtip',
         scrollX: true,
         paging: false,
         searching: false,
@@ -95,5 +109,9 @@ $(document).ready( function () {
             {"data": "totalAmount"}
         ]
     } );
+    new $.fn.dataTable.FixedColumns( gliderTable, {
+        leftColumns: 1
+    } );
+    
 } );
 

@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
 
-<!-- DataTables CSS -->
-<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.0/css/jquery.dataTables.css">
-  
-<!-- jQuery -->
-<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-  
-<!-- DataTables -->
-<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.0/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/colreorder/1.1.1/css/dataTables.colReorder.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/colvis/1.1.0/css/dataTables.colVis.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/fixedcolumns/3.0.1/css/dataTables.fixedColumns.css">
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Mario Kart 8 Stat Tables </title>
+    <!-- jQuery -->
+    <script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="/styles/jqueryui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/jqueryui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/jqueryui/jquery-ui.theme.min.css">
 
-<style>
+    <!-- DataTables -->
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/colreorder/1.1.1/js/dataTables.colReorder.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/colvis/1.1.0/js/dataTables.colVis.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/fixedcolumns/3.0.1/js/dataTables.fixedColumns.min.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Mario Kart 8 Stat Tables </title>
+
+    <style>
+
+    </style>
+    <script>
+         $(function() {
+        $( "#tabs" ).tabs();
+        });
+    </script>
     
-</style>
-
 </head>
 <body>
-    <div class="debug">MK8 Tables</div>
-    <h2>Characters</h2>
-    <table id="CharacterTable" class="display">
+    <div class="titleText">MK8 Tables</div>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Characters</a></li>
+            <li><a href="#tabs-2">Kart Bodies</a></li>
+            <li><a href="#tabs-3">Tires</a></li>
+            <li><a href="#tabs-4">Gliders</a></li>
+            </ul>
+        <div id="tabs-1">
+<table id="CharacterTable" class="display">
         <thead>
             <tr>
                 <th>characters</th>
@@ -43,9 +64,9 @@
             </tr>
         </thead>
     </table>
-    </br>
-    <h2>Kart Bodies</h2>
-    <table id="BodyTable" class="display">
+        </div>
+        <div id="tabs-2">
+            <table id="BodyTable" class="display">
         <thead>
             <tr>
                 <th>bodyType</th>
@@ -66,9 +87,9 @@
             </tr>
         </thead>
     </table>
-    </br>
-    <h2>Tires</h2>
-    <table id="TireTable" class="display">
+        </div>
+        <div id="tabs-3">
+<table id="TireTable" class="display">
         <thead>
             <tr>
                 <th>tireName</th>
@@ -88,9 +109,9 @@
             </tr>
         </thead>
     </table>
-    </br>
-    <h2>Gliders</h2>
-    <table id="GliderTable" class="display">
+        </div>
+        <div id="tabs-4">
+            <table id="GliderTable" class="display">
         <thead>
             <tr>
                 <th>gliderName</th>
@@ -110,6 +131,13 @@
             </tr>
         </thead>
     </table>
+        </div>
+</div>
+    
+    
+    
+    
+    
 
     <script  type="text/javascript" src="tableScript.js">
     </script>
