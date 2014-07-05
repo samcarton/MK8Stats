@@ -1,0 +1,16 @@
+[
+	{"data": "characters"},
+	{"data": "speed"},
+	{"data": "speedWater"},
+	{"data": "speedAir"},
+	{"data": "speedAntigravity"},
+	{"data": "acceleration"},
+	{"data": "weight"},
+	{"data": "handling"},
+	{"data": "handlingWater"},
+	{"data": "handlingAir"},
+	{"data": "handlingAntigravity"},
+	{"data": "traction"},
+	{"data": "miniturbo"},
+	{"data": "totalAmount"}
+]

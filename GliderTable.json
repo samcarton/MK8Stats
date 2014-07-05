@@ -1,0 +1,36 @@
+{
+	"data": [
+		{
+			"gliderName": "Super / Waddle Wing / Plane / Wario Wing / Gold",
+			"speed": 0,
+			"speedWater": 0,
+			"speedAir": 0,
+			"speedAntigravity": 0,
+			"acceleration": 0,
+			"weight": 0,
+			"handling": 0,
+			"handlingWater": 0,
+			"handlingAir": 0,
+			"handlingAntigravity": 0,
+			"traction": 0,
+			"miniturbo": 0,
+			"totalAmount": 0
+		},
+		{
+			"gliderName": "Flower / Peach Parasol / MKTV Parafoil / Bowser Kite / Cloud",
+			"speed": 0,
+			"speedWater": 0,
+			"speedAir": -0.25,
+			"speedAntigravity": 0,
+			"acceleration": 0.25,
+			"weight": -0.25,
+			"handling": 0,
+			"handlingWater": 0,
+			"handlingAir": 0.25,
+			"handlingAntigravity": 0,
+			"traction": 0,
+			"miniturbo": 0.25,
+			"totalAmount": 0.25
+		}
+	]
+}
